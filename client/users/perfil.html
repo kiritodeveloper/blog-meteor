@@ -1,0 +1,119 @@
+<template name="perfil">
+	{{>banner}} 
+	{{>Template.dynamic template=mainmenu}}
+   <!--<div class="row">
+        <div class="col m10 offset-m1 s12"> 	
+        	<h2 class="center-align">{{username}}</h2>
+            <div class="center-align card-info">
+                <div  id="fotoperfil"   class="col s12">
+                    <img src="/image/html.jpg">
+                </div>
+            </div>
+            <div id="profile" class="row col s12">
+                <form class="col s7 center-align">
+                    <div class="row">
+                        <div class="input-field col m9 s12">
+                            <input  id="username" type="text" class="validate" required>
+                            <label for="username">Nombre: {{username}}</label>
+                        </div>
+                        <div class="input-field col m9 s12">
+                            <input  id="apellido" type="text" class="validate" required>
+                            <label for="apellido">Apellido: {{apellido}}</label>
+                        </div>
+	                </div>
+	                <div class="modal-footer">
+						<button id="editar" type="button" class="btn btn-default" data-dismiss="modal">Editar</button>
+						<button type="button" class="btn btn-primary" id="guardar">Guardar</button>
+						<button type="button" class="btn btn-primary" id="cancelar">Cancelar</button>
+					</div>
+
+                </form>
+            </div>
+        </div>
+    </div>-->
+      <div class="container">
+        <div class="row">
+            <div class="col m10 offset-m1 s12">
+                <h2 class="center-align">
+                    <h2 class="center-align">{{username}}</h2>
+                        <div class="center-align card-info">
+                            <div  id="fotoperfil" class="col s12">
+                                <img src="/image/usu.png">
+                            </div>
+                        </div>
+                </h2>
+                <div class="row">
+                    <form class="col s10">
+                        <div class="row">
+                            <div class="input-field col m6 s12">
+                            
+                                <input  id="first_name" type="text" class="validate" required>
+                                <label for="first_name">Nombre: {{username}}</label>
+                            </div>
+                            <div class="input-field col m6 s12">
+                                <input id="last_name" type="text" class="validate" required>
+                                <label for="last_name">Apellido: {{apellido}}</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <div class="input-field col s12">
+                                <input id="email" type="email" class="validate" required>
+                                 <label for="message">Email: {{email}} </label>
+                            </div>
+                         </div>
+                      
+
+                        <div class="row">
+                            <div class="col m12 center-align">
+                                
+                        <button id="editar" type="button" class="btn btn-default" data-dismiss="modal">Editar</button>
+                        <button type="button" class="btn btn-primary" id="guardar">Guardar</button>
+                        <button type="button" class="btn btn-primary" id="cancelar">Cancelar</button>
+                    
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!--<div class="col-lg-6 col-sm-6">
+    <div class="card hovercard">
+        
+        <div class="useravatar">
+            <img alt="" src="http://lorempixel.com/100/100/people/9/">
+        </div>
+        <div class="card-info"> <span class="card-title">{{username}} {{address}}</span>
+
+        </div>
+    </div>
+    <div class="btn-pref btn-group btn-group-justified btn-group-lg" col s12 role="group" aria-label="...">
+        <div class="btn-group" role="group">
+            <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <div class="hidden-xs">Editar</div>
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                <div class="hidden-xs">Amigos</div>
+            </button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <div class="hidden-xs">Following</div>
+            </button>
+        </div>
+    </div>
+
+
+    
+    </div>
+            
+    
+   </div>
+   -->
+  {{>footer}}
+</template>
+
+

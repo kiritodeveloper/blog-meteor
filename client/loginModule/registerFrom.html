@@ -1,0 +1,78 @@
+<template name="registerForm">
+	<form action="" method="POST">
+        <div class="row">
+           <div class="col s11"><legend>Login</legend></div>
+           <div class="col s1">
+            <a id="close" href="">X</a>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="input-field"> 
+          <div class="form-group">
+            <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input type="text" class="form-control"  name="username" placeholder="Nombre">
+            </div>
+            </div>
+        </div>
+        </div>
+       <div class="col s6">
+          <div class="input-field"> 
+	          <div class="form-group">
+	            <div class="input-field col s12">
+	            <i class="material-icons prefix">person_pin</i>
+	            <input type="text" class="form-control" name="apellido" placeholder="Apellido">
+	            </div>
+	            </div>
+           </div>
+        </div>
+        <div class="col s6">
+          <div class="input-field col s12">
+          <i class="material-icons prefix">list</i>
+            <input type="text" class="form-control" name="carrera" placeholder="Carrera">
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="input-field"> 
+	          <div class="form-group">
+	            <div class="input-field col s12">
+	            <i class="material-icons prefix">markunread_mailbox</i>
+	            <input type="text" class="form-control"  name="email" placeholder="Email">
+	            </div>
+	            </div>
+           </div>
+        </div>
+        <div class="col s6">
+          <div class="input-field"> 
+	          <div class="form-group">
+	            <div class="input-field col s12">
+	            <i class="material-icons prefix">vpn_key</i>
+	            <input type="password" class="form-control" name="password" placeholder="Password">
+	            </div>
+	            </div>
+           </div>
+        </div>
+         <div class="col s6">
+          <div class="input-field"> 
+	          <div class="form-group">
+	            <div class="input-field col s12">
+	            <i class="material-icons prefix">vpn_key</i>
+	            <input type="password" class="form-control" name="repassword" placeholder="Repita Password">
+	            </div>
+	            </div>
+           </div>
+        </div>
+        <div class="row">
+          <div class="col s6 ">
+              <button type="submit" id="registrar" class="btn waves-effect waves-light grey darken-4">Crear Cuenta
+                <i class="material-icons right">send</i>
+              </button>
+          </div>
+          <div class="col s6 ">
+              <button id="return" type="button" class="btn waves-effect waves-light grey darken-4">Volver</button>
+          </div>
+        </div>
+     
+      </form> 
+     
+</template>

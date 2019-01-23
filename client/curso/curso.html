@@ -1,0 +1,96 @@
+<template name="curso">
+  {{>banner}}
+  {{>Template.dynamic template=mainmenu}}
+    <div class="container">
+        <div class="row">         
+            {{#each list}}
+                  {{> mostrarcurso}}
+            {{/each}}
+            <!--    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="box">
+                    <div id="cursos" class="box-icon">
+                        <span><img class="foto" src="/image/css.png"></span>
+                    </div>
+                    <div class="info">
+                        <h4 class="text-center">CSS3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!</p>
+                        {{#if currentUser}}
+                        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"> Tomar este curso </button>
+                         {{/if}}
+                    </div>
+                </div>
+            </div>
+             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="box">
+                    <div id="cursos" class="box-icon">
+                        <span><img class="foto" src="/image/node.png"></span>
+                    </div>
+                    <div class="info">
+                        <h4 class="text-center">NODE.JS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!</p>
+                        {{#if currentUser}}
+                        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Tomar este curso</button>
+                        {{/if}}
+                    </div>
+            </div>
+        </div> 
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="box">
+                <div id="cursos" class="box-icon">
+                    <span><img class="foto" src="/image/php.jpg"></span>
+                </div>
+                <div class="info">
+                    <h4 class="text-center">PHP 7</h4>
+                    <p> En este curso avanzado utilizando Php 7 aprenderemos a trabajar de forma completa enfocado a convertirse en un desarrollador web con php utilizando lo último de este lenguaje, namespaces, métodos mágicos, trabajo con sesiones, variables get y post.</p>
+                    {{#if currentUser}}
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Tomar este curso</button>
+                     {{/if}}
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="box">
+                <div id="cursos" class="box-icon">
+                    <span><img class="foto" src="/image/php.jpg"></span>
+                </div>
+                <div class="info">
+                    <h4 class="text-center">PHP 7</h4>
+                    <p> En este curso avanzado utilizando Php 7 aprenderemos a trabajar de forma completa enfocado a convertirse en un desarrollador web con php utilizando lo último de este lenguaje, namespaces, métodos mágicos, trabajo con sesiones, variables get y post.</p>
+                    {{#if currentUser}}
+                    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Tomar este curso</button>
+                     {{/if}}
+                </div>
+            </div>
+        </div>-->
+  </div>
+</div>
+
+  
+    {{>footer}}
+</template>
+
+<template name="mostrarcurso">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="box">
+                <div id="cursos" class="box-icon">
+                    <span><img class="foto" src="/image/php.jpg"></span>
+                </div>
+                <div class="info">
+                    <h4 class="text-center">{{this.nombre}}</h4>
+                    <div class="rectangle_hidden">
+                        <div class="container_curso"> 
+                            <p> {{this.detalle}}</p>
+                        </div>
+                    </div>
+                    {{#if currentUser}}
+                        {{#if isInRole 'facilitador' 'facilitador'}} 
+                           <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 170px; height: 30px; padding-bottom:3px;">Modificar Curso</button>
+                             <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 170px; height: 30px; padding-bottom:3px;">Eliminar Curso</button>
+                        {{else}}      
+                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Tomar este curso</button>
+                        {{/if}}
+                     {{/if}}
+                </div>
+            </div>
+    </div>
+</template>
